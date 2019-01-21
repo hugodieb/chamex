@@ -1,7 +1,11 @@
 <template>
   <v-card>
-    <v-toolbar color="cyan" dark>
+    <v-toolbar color="pink" dark>
       <v-text-field class="ma-4" v-model="newtask" @keyup.enter="add()" label="Add todo and hit enter" :loading="adding"/>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
     </v-toolbar>
     <v-progress-linear :indeterminate="true" v-if="loading"></v-progress-linear>
     <v-list two-line>
