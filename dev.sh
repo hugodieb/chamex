@@ -125,7 +125,7 @@ function dkrun_prod {
 }
 
 function deploy_prod {
-  ssh ubuntu@$HOST_PROD "
+  ssh ubuntu@chamex.io "
     cd ~/chamex
     git reset --hard
     git pull
